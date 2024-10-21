@@ -23,6 +23,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.Text.Acts.SetVisible,
 		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.System.Cnds.Every,
 		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Plugins.Sprite.Cnds.IsVisible,
@@ -31,7 +32,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.Sprite.Acts.SetPos,
-		C3.Plugins.LocalStorage.Acts.SetItem
+		C3.Plugins.LocalStorage.Acts.SetItem,
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.System.Acts.GoToLayout
 	];
 };
 self.C3_JsPropNameTable = [
@@ -49,7 +52,6 @@ self.C3_JsPropNameTable = [
 	{passivka: 0},
 	{passivkaalchemica: 0},
 	{Мышь: 0},
-	{Спрайт: 0},
 	{BOUGHT: 0},
 	{passiveunder: 0},
 	{manabreak: 0},
@@ -68,10 +70,17 @@ self.C3_JsPropNameTable = [
 	{pointboostertext: 0},
 	{BOUGHT3: 0},
 	{pointbooster2: 0},
-	{Спрайт2: 0},
-	{Спрайт3: 0},
+	{halloween: 0},
+	{changelog: 0},
 	{backgroundshop3: 0},
 	{Текст2: 0},
+	{Текст3: 0},
+	{Спрайт: 0},
+	{Спрайт2: 0},
+	{Текст4: 0},
+	{Спрайт3: 0},
+	{Текст5: 0},
+	{Текст6: 0},
 	{money: 0}
 ];
 
@@ -89,7 +98,6 @@ self.InstanceType = {
 	passivka: class extends self.ISpriteInstance {},
 	passivkaalchemica: class extends self.ITextInstance {},
 	Мышь: class extends self.IInstance {},
-	Спрайт: class extends self.ISpriteInstance {},
 	BOUGHT: class extends self.ITextInstance {},
 	passiveunder: class extends self.ISpriteInstance {},
 	manabreak: class extends self.ISpriteInstance {},
@@ -108,8 +116,15 @@ self.InstanceType = {
 	pointboostertext: class extends self.ITextInstance {},
 	BOUGHT3: class extends self.ITextInstance {},
 	pointbooster2: class extends self.ISpriteInstance {},
-	Спрайт2: class extends self.ISpriteInstance {},
-	Спрайт3: class extends self.ISpriteInstance {},
+	halloween: class extends self.ISpriteInstance {},
+	changelog: class extends self.ISpriteInstance {},
 	backgroundshop3: class extends self.ISpriteInstance {},
-	Текст2: class extends self.ITextInstance {}
+	Текст2: class extends self.ITextInstance {},
+	Текст3: class extends self.ITextInstance {},
+	Спрайт: class extends self.ISpriteInstance {},
+	Спрайт2: class extends self.ISpriteInstance {},
+	Текст4: class extends self.ITextInstance {},
+	Спрайт3: class extends self.ISpriteInstance {},
+	Текст5: class extends self.ITextInstance {},
+	Текст6: class extends self.ITextInstance {}
 }
