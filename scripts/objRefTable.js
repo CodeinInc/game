@@ -69,6 +69,9 @@ self.C3_JsPropNameTable = [
 	{BOUGHT3: 0},
 	{pointbooster2: 0},
 	{Спрайт2: 0},
+	{Спрайт3: 0},
+	{backgroundshop3: 0},
+	{Текст2: 0},
 	{money: 0}
 ];
 
@@ -105,5 +108,8 @@ self.InstanceType = {
 	pointboostertext: class extends self.ITextInstance {},
 	BOUGHT3: class extends self.ITextInstance {},
 	pointbooster2: class extends self.ISpriteInstance {},
-	Спрайт2: class extends self.ISpriteInstance {}
+	Спрайт2: class extends self.ISpriteInstance {},
+	Спрайт3: class extends self.ISpriteInstance {},
+	backgroundshop3: class extends self.ISpriteInstance {},
+	Текст2: class extends self.ITextInstance {}
 }
